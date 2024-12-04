@@ -3,19 +3,19 @@ import styles from "./Navigation.module.css";
 
 const Navigation = () => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <a href="/portfolio"></a>Portfolio
+    <nav className={styles.container}>
+      <ul className={styles.list}>
+        <li className={styles.listItem}>
+          <a href="/portfolio">Portfolio</a>
         </li>
-        <li>
-          <a href="/athletics"></a>Athletics
+        <li className={styles.listItem}>
+          <a href="/athletics">Athletics</a>
         </li>
-        <li>
-          <a href="/resume"></a>Resume
+        <li className={styles.listItem}>
+          <a href="/resume">Resume</a>
         </li>
-        <li>
-          <a href="/contact"></a>Contact
+        <li className={styles.listItem}>
+          <a href="/contact">Contact</a>
         </li>
       </ul>
     </nav>
