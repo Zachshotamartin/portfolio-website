@@ -6,7 +6,12 @@
   position: relative;
   top: -800px;
   left: -50px;
+  transition: transform 0.5s ease-in-out;
 }
+.headshot:hover {
+  transform: scale(1.1);
+}
+
 .green {
   border-radius: 50px;
   width: 300px;
@@ -15,6 +20,10 @@
   background: #8fa589;
   position: relative;
   top: -575px;
+  transition: transform 0.4s ease-in-out;
+}
+.green:hover {
+  transform: rotate(-15deg);
 }
 .blue {
   border-radius: 50px;
@@ -25,7 +34,12 @@
   position: relative;
   top: -150px;
   left: -100px;
+  transition: transform 0.4s ease-in-out;
 }
+.blue:hover {
+  transform: skewX(-15deg);
+}
+
 .orange {
   border-radius: 50px;
   width: 300px;
@@ -35,4 +49,8 @@
   position: relative;
   top: 50px;
   left: -150px;
+  transition: transform 0.4s ease-in-out;
+}
+.orange:hover {
+  transform: translate(-20px, -20px);
 }

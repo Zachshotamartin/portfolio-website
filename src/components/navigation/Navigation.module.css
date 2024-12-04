@@ -11,20 +11,23 @@
   list-style: none;
   justify-content: space-around;
   align-items: center;
-
   width: 100%;
 }
 
-.listItem a {
-  text-decoration: none;
-  color: white;
+.listItem {
   background-color: #6e9ac2;
   padding: 10px 20px;
   border-radius: 1000px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.listItem a {
+  color: white;
+  text-decoration: none;
 }
 
-.listItem a:hover {
-  text-decoration: underline;
+.listItem:hover {
+  transform: rotate(-5deg);
+  background-color: #0064c2;
 }
 
 .listItem:last-child {

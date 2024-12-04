@@ -1,6 +1,9 @@
 .container {
   display: flex;
+  flex-direction: row;
+
   justify-content: center;
+  height: 500px;
 }
 .headshot {
 }
