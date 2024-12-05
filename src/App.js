@@ -11,15 +11,19 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Banner />
         <Navigation />
+        <Banner />
       </header>
       <main>
-        <Line text="Testing" from="right" />
+        <Line text="About Me" from="right" />
         <Main />
-        <Portfolio />
+        <Line text="Athletics" from="left" />
         <Athletics />
+        <Line text="Portfolio" from="right" />
+        <Portfolio />
+        <Line text="Contact" from="left" />
         <Contact />
+        <Line text="Resume" from="right" />
         <Resume />
       </main>
       <footer>

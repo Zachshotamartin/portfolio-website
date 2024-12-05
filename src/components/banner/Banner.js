@@ -11,9 +11,7 @@ const Banner = () => {
         alt="Site Logo"
         className={`${styles.image} ${styles.imageLeft}`}
       />
-      <h1 className={styles.text}>
-        Hey! Yo! I’m Zach Martin and I’m a visual computing software engineer.
-      </h1>
+      <h1 className={styles.text}>Hey! Yo! Visual Computation</h1>
       <a
         href="https://www.linkedin.com/in/zachary-martin-0a6437185/"
         target="_blank"
