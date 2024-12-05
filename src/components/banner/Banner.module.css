@@ -1,33 +1,34 @@
+/*************  ✨ Codeium Command 🌟  *************/
 .container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
   background-color: #6e9ac2;
   border-radius: 1000px;
-  margin: 3rem 10%;
-  padding: 0 1rem;
-  
+  margin: 0 5rem;
+  height: 4rem;
+  margin-bottom: 2rem;
 }
 
 .text {
   flex: 1;
-  padding-left: "0px";
-  padding-right: "0px";
   color: white;
+  flex-shrink: 0;
+  white-space: nowrap;
+  text-align: right;
+  margin-right: 1rem;
 }
 
-.image {
-  height: 60px;
-  width: 60px;
-}
 .imageLeft {
-  margin-right: 5px;
+  margin-left: 0.5rem;
   border-radius: 1000px;
-  width: 120px;
+  height: 3rem;
+  width: auto;
 }
 
 .imageRight {
-  margin-left: 5px;
+  margin-right: 0.7rem;
   border-radius: 1000px;
+  height: 3rem;
+  width: auto;
 }

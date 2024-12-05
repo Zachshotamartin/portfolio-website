@@ -1,27 +1,13 @@
 .container {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 0 20px;
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 50px;
+  font-size: 1.6rem;
 }
 
 .listItem {
   background-color: #6e9ac2;
-  width: 200px;
-  padding: 10px 20px;
+  padding: 0.3rem 1rem;
   border-radius: 1000px;
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
-
-.listItem:hover {
-  transform: rotate(-5deg);
-}
-
-.listItem:last-child {
-  margin-right: 0;
 }
 
 .blue {
@@ -43,17 +29,18 @@
 .link {
   text-decoration: none;
 }
+.link:hover ~ .listItem {
+  transform: rotate(-5deg);
+}
 
 .list {
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 200px;
-
-  justify-content: center;
+  gap: 5rem;
   flex-direction: row;
+  margin-left: 5rem;
 }
+
 .blueContainer {
   background-color: #6e9ac2;
 }
