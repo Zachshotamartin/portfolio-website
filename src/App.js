@@ -6,7 +6,7 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Athletics from "./components/athletics/Athletics";
 import Contact from "./components/contact/Contact";
 import Resume from "./components/resume/Resume";
-
+import Line from "./components/Line/Line";
 function App() {
   return (
     <div className="App">
@@ -15,6 +15,7 @@ function App() {
         <Navigation />
       </header>
       <main>
+        <Line text="Testing" from="right" />
         <Main />
         <Portfolio />
         <Athletics />

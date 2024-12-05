@@ -1,13 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import headshot from "../../res/images/headshot.jpg";
 import styles from "./Headshot.module.css";
+
 const Headshot = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseOver = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseOut = () => {
+    setIsHovered(false);
+  };
   return (
-    <div>
-      <div className={styles.orange}></div>
-      <div className={styles.blue}></div>
-      <div className={styles.green}></div>
-      <img className={styles.headshot} src={headshot} alt="headshot" />
+    <div className={styles.container}>
+      <div className={`${styles.red} ${isHovered ? styles.hovered : ""}`}></div>
+      <div
+        className={`${styles.orange} ${isHovered ? styles.hovered : ""}`}
+      ></div>
+      <div
+        className={`${styles.green} ${isHovered ? styles.hovered : ""}`}
+      ></div>
+      <div
+        className={`${styles.blue} ${isHovered ? styles.hovered : ""}`}
+      ></div>
+      <img
+        className={styles.headshot}
+        src={headshot}
+        alt="headshot"
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
+      />
     </div>
   );
 };

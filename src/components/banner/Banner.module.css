@@ -5,13 +5,13 @@
   justify-content: flex-start;
   background-color: #6e9ac2;
   border-radius: 1000px;
-  margin: 2rem 15%;
+  margin: 3rem 10%;
   padding: 0 1rem;
+  
 }
 
 .text {
   flex: 1;
-  text-align: center;
   padding-left: "0px";
   padding-right: "0px";
   color: white;

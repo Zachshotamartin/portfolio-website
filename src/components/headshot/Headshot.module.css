@@ -1,56 +1,72 @@
-.headshot {
-  border-radius: 50px;
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
+/*************  ✨ Codeium Command 🌟  *************/
+.container {
+  display: flex;
   position: relative;
-  top: -800px;
-  left: -50px;
-  transition: transform 0.5s ease-in-out;
+
+  flex: 1;
+  justify-content: center;
+  align-items: center;
 }
-.headshot:hover {
-  transform: scale(1.1);
+
+.headshot {
+  position: absolute;
+  border-radius: 50px;
+  width: 450px;
+  height: 600px;
+  object-fit: cover;
+  opacity: 0.8;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.blue {
+  position: absolute;
+  border-radius: 50px;
+  width: 450px;
+  height: 600px;
+  background: #6e9ac2;
+  transform: rotate(-15deg);
+  opacity: 0.8;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  transition: ease-in-out 0.5s;
 }
 
 .green {
+  position: absolute;
   border-radius: 50px;
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
+  width: 450px;
+  height: 600px;
   background: #8fa589;
-  position: relative;
-  top: -575px;
-  transition: transform 0.4s ease-in-out;
-}
-.green:hover {
-  transform: rotate(-15deg);
-}
-.blue {
-  border-radius: 50px;
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  background: #6e9ac2;
-  position: relative;
-  top: -150px;
-  left: -100px;
-  transition: transform 0.4s ease-in-out;
-}
-.blue:hover {
-  transform: skewX(-15deg);
+  transform: rotate(-30deg);
+  opacity: 0.8;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  transition: ease-in-out 0.5s;
 }
 
 .orange {
+  position: absolute;
   border-radius: 50px;
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
+  width: 450px;
+  height: 600px;
   background: #f3b76f;
-  position: relative;
-  top: 50px;
-  left: -150px;
-  transition: transform 0.4s ease-in-out;
+  transform: rotate(-45deg);
+  opacity: 0.8;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  transition: ease-in-out 0.5s;
 }
-.orange:hover {
-  transform: translate(-20px, -20px);
+
+.red {
+  position: absolute;
+  border-radius: 50px;
+  width: 450px;
+  height: 600px;
+  background: #f77f6b;
+  transform: rotate(-60deg);
+  opacity: 0.8;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  transition: ease-in-out 0.5s;
+}
+
+.hovered {
+  transform: rotate(0deg);
+  transition: ease-in-out 0.5s;
 }

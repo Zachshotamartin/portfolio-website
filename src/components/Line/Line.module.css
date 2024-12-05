@@ -1,0 +1,34 @@
+.textLeft {
+  color: #6e9ac2;
+  flex: 1;
+  text-align: left;
+}
+.textLeft {
+  color: #6e9ac2;
+  flex: 1;
+  text-align: right;
+  margin-right: 20px;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.right {
+  flex: 1.2;
+  background-color: #6e9ac2;
+  height: 30px;
+  border-radius: 1000px 0 0 1000px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+.left {
+  flex: 1.2;
+  background-color: #6e9ac2;
+  height: 30px;
+  border-radius: 0 1000px 1000px 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+.empty {
+  flex: 1;
+}
