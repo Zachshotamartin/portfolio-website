@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Athletics.module.css";
-//import gymvideo from "../../res/videos/gymvideo.mp4";
+import gymvideo from "../../res/videos/gymvideo.mp4";
 
 const Athletics = () => {
   return (
@@ -11,17 +11,10 @@ const Athletics = () => {
         <button className={styles.orange}>Pommels</button>
         <button className={styles.red}>Rings</button>
       </div>
-
-      {/* <video
-        className={styles.video}
-        controls
-        autoPlay
-        loop
-        onMouseOver={(e) => (e.target.controls = false)}
-        onMouseOut={(e) => (e.target.controls = false)}
-      >
+      <video className={styles.video} controls autoplay loop>
         <source src={gymvideo} type="video/mp4" />
-      </video> */}
+      </video>
+
       <ul>
         <li>Three-time NCAA team champion (2021-23)</li>
         <li>Three-time NCAA All-American (2020-22)</li>
