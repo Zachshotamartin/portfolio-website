@@ -6,7 +6,7 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Athletics from "./components/athletics/Athletics";
 import Contact from "./components/contact/Contact";
 import Resume from "./components/resume/Resume";
-import Line from "./components/Line/Line";
+import Line from "./components/line/Line";
 function App() {
   return (
     <div className="App">

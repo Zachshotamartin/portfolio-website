@@ -1,0 +1,6 @@
+.gridItem {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  transition: ease-in-out 0.1s;
+}
