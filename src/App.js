@@ -7,6 +7,7 @@ import Athletics from "./components/athletics/Athletics";
 import Contact from "./components/contact/Contact";
 import Resume from "./components/resume/Resume";
 import Line from "./components/line/Line";
+import ColorDivGrid from "./components/color/ColorDivGrid";
 function App() {
   return (
     <div className="App">
@@ -21,14 +22,10 @@ function App() {
         <Athletics />
         <Line text="Portfolio" from="right" />
         <Portfolio />
-        <Line text="Contact" from="left" />
+        <Line text="Reach Out" from="left" />
         <Contact />
-        <Line text="Resume" from="right" />
-        <Resume />
+        <ColorDivGrid />
       </main>
-      <footer>
-        <h2>Footer</h2>
-      </footer>
     </div>
   );
 }

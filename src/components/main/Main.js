@@ -3,7 +3,7 @@ import styles from "./Main.module.css";
 import Headshot from "../headshot/Headshot";
 import githubLogo from "../../res/images/githubIcon.png";
 import linkedinLogo from "../../res/images/linkedinIcon.png";
-import ColorDivGrid from "../color/ColorDivGrid";
+// import ColorDivGrid from "../color/ColorDivGrid";
 const Main = () => {
   return (
     <div className={styles.container}>
@@ -34,7 +34,7 @@ const Main = () => {
             <img src={linkedinLogo} alt="Linkedin" className={styles.icon} />
           </a>
         </div>
-        <ColorDivGrid />
+        {/* <ColorDivGrid /> */}
       </div>
     </div>
   );
