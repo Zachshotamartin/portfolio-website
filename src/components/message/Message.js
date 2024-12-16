@@ -33,38 +33,53 @@ const Message = () => {
   return (
     <div className={styles.container}>
       <form className={styles.form} onSubmit={handleSubmit}>
-        <label>Name</label>
-        <input
-          type="text"
-          placeholder="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-        />
-        <label>Email</label>
-        <input
-          type="email"
-          placeholder="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <label>Message</label>
-        <textarea
-          rows="3"
-          cols="30"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          required
-        />
-        <input type="submit" value="Submit" />
+        <div className={styles.row}>
+          <label className={styles.label}>Name</label>
+          <h2> Contact </h2>
+        </div>
+        <div className={styles.row}>
+          <input
+            className={styles.input}
+            type="text"
+            placeholder="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+          <h3> zachsm@alumni.stanford.edu </h3>
+        </div>
+        <div className={styles.row}>
+          <label className={styles.label}>Email</label>
+          <h2> Based In </h2>
+        </div>
+        <div className={styles.row}>
+          <input
+            className={styles.input}
+            type="email"
+            placeholder="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <h3> Cameron Park, CA </h3>
+        </div>
+        <div className={styles.row}>
+          <label className={styles.label}>Message</label>
+        </div>
+        <div className={styles.row}>
+          <textarea
+            className={styles.textarea}
+            rows="3"
+            cols="30"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            required
+          />
+        </div>
+        <div className={styles.row}>
+          <input className={styles.button} type="submit" value="Submit" />
+        </div>
       </form>
-      <div className={styles.info}>
-        <h2> Contact </h2>
-        <h3> zachsm@alumni.stanford.edu </h3>
-        <h2> Based In </h2>
-        <h3> Cameron Park, CA </h3>
-      </div>
     </div>
   );
 };
