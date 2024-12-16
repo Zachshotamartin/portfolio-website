@@ -1,4 +1,5 @@
 import "./App.css";
+import React from "react";
 import Navigation from "./components/navigation/Navigation";
 import Banner from "./components/banner/Banner";
 import Main from "./components/main/Main";
@@ -8,6 +9,7 @@ import Contact from "./components/contact/Contact";
 import Resume from "./components/resume/Resume";
 import Line from "./components/line/Line";
 import ColorDivGrid from "./components/color/ColorDivGrid";
+import Message from "./components/message/Message";
 function App() {
   return (
     <div className="App">
@@ -22,8 +24,7 @@ function App() {
         <Athletics />
         <Line text="Portfolio" from="right" />
         <Portfolio />
-        <Line text="Reach Out" from="left" />
-        <Contact />
+        <Message />
         <ColorDivGrid />
       </main>
     </div>

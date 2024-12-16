@@ -1,0 +1,22 @@
+.container {
+  background-color: #6e9ac2;
+  height: 300px;
+  width: 50%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+}
