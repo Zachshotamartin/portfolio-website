@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 4rem 15%;
+}
+
+.infocontainer {
+  flex: 1.5;
+}
+.imagecontainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 400px;
+  height: 300px;
+  border-radius: 50px;
+  object-fit: cover;
+}
