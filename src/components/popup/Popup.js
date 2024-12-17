@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import styles from "./Popup.module.css";
 import Message from "../message/Message";
 import PDF from "../../res/ZacharyMartin-Resume.pdf";
+import arrow from "../../res/images/arrow.png";
 
 const Popup = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,10 +54,17 @@ const Popup = () => {
   return (
     <div className={styles.component}>
       {
+        /*************  ✨ Codeium Command 🌟  *************/
         <button
           className={styles.componentbutton}
+          style={{
+            backgroundImage: `url(${arrow})`,
+            backgroundSize: "contain",
+            backgroundRepeat: "no-repeat",
+          }}
           onClick={!navIsOpen ? handleNavOpen : handleNavClose}
         ></button>
+        /******  b5f45d96-fcae-4012-98b0-c878b0fe9360  *******/
       }
       {navIsOpen && (
         <div ref={navRef} className={styles.container}>
