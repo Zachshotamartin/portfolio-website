@@ -1,4 +1,3 @@
-/*************  ✨ Codeium Command 🌟  *************/
 .container {
   display: flex;
   flex-direction: row;
@@ -32,4 +31,8 @@
   border-radius: 1000px;
   height: 3rem;
   width: auto;
+  transition: ease-in-out 0.3s;
+}
+.imageRight:hover {
+  transform: scale(1.2);
 }
