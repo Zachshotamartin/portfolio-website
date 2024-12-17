@@ -11,7 +11,7 @@ const Athletics = () => {
         <button className={styles.orange}>Pommels</button>
         <button className={styles.red}>Rings</button>
       </div>
-      <video className={styles.video} controls autoplay loop>
+      <video className={styles.video} controls autoPlay loop>
         <source src={gymvideo} type="video/mp4" />
       </video>
 

@@ -1,66 +1,79 @@
-/*************  ✨ Codeium Command 🌟  *************/
 .component {
   position: fixed;
   top: 90%;
   left: 95%;
 }
-.component-hide {
-}
-.component button {
+
+.componentbutton {
   border-radius: 1000px;
   border: none;
-  width: 40px;
+  width: 50px;
   height: 40px;
   padding: 0px;
   cursor: pointer;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  background-color: rgba(110, 154, 194, 1);
   transition: ease-in-out 0.3s;
-  background-color: rgba(110, 154, 194, 0.8);
-  animation: rollOutToRight 0.5s ease-in-out forwards;
-  animation-fill-mode: forwards;
 }
-.component button:hover {
+
+.componentbutton:hover {
   cursor: pointer;
-  transform: rotate(-15deg);
+  transform: scale(1.2);
 }
 
 .container {
   position: fixed;
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
   width: 100%;
-  left: 0%;
-  animation: rollInFromRight 0.5s ease-in-out forwards;
-  animation-fill-mode: forwards;
+  top: 89%;
+  left: -5%;
 }
 
-.container button {
+.containerbutton {
   text-align: center;
   font-size: 1rem;
   height: 50px;
   width: 225px;
-
   border-radius: 1000px;
   border: none;
   margin: 0.5rem;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
   font-size: 1.5rem;
   margin-left: 2rem;
-  transition: ease-in-out 0.3s;
-  background-color: rgba(110, 154, 194, 0.8);
+  background-color: rgba(110, 154, 194, 1);
+  animation: rollInFromRight 0.5s forwards;
+  color: white; /* Transition specifically for the transform property */
 }
-.container button:hover {
-  cursor: pointer;
-  transform: rotate(-15deg);
+.torotate {
+  transition: transform 0.3s ease-in-out;
+}
+.torotate:hover {
+  transform: rotate(-15deg); /* Apply rotation on hover */
+}
+
+.containerbuttontransitioning {
+  text-align: center;
+  font-size: 1rem;
+  height: 50px;
+  width: 225px;
+  border-radius: 1000px;
+  border: none;
+  margin: 0.5rem;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  background-color: rgba(110, 154, 194, 1);
+  animation: rollOutToRight 0.5s forwards;
 }
 
 @keyframes rollInFromRight {
   0% {
-    transform: translateX(50%);
+    transform: translateX(1000px);
   }
-  50% {
-    transform: translateX(50%);
-  }
+
   100% {
     transform: translateX(-5%);
   }
@@ -68,12 +81,10 @@
 
 @keyframes rollOutToRight {
   0% {
-    transform: translateX(0);
+    transform: translateX(-5%);
   }
-  50% {
-    transform: translateX(40%);
-  }
+
   100% {
-    transform: translateX(40%);
+    transform: translateX(1000px);
   }
 }
