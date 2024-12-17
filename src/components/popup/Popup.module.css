@@ -1,0 +1,79 @@
+/*************  ✨ Codeium Command 🌟  *************/
+.component {
+  position: fixed;
+  top: 90%;
+  left: 95%;
+}
+.component-hide {
+}
+.component button {
+  border-radius: 1000px;
+  border: none;
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+  cursor: pointer;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  transition: ease-in-out 0.3s;
+  background-color: rgba(110, 154, 194, 0.8);
+  animation: rollOutToRight 0.5s ease-in-out forwards;
+  animation-fill-mode: forwards;
+}
+.component button:hover {
+  cursor: pointer;
+  transform: rotate(-15deg);
+}
+
+.container {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  left: 0%;
+  animation: rollInFromRight 0.5s ease-in-out forwards;
+  animation-fill-mode: forwards;
+}
+
+.container button {
+  text-align: center;
+  font-size: 1rem;
+  height: 50px;
+  width: 225px;
+
+  border-radius: 1000px;
+  border: none;
+  margin: 0.5rem;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  transition: ease-in-out 0.3s;
+  background-color: rgba(110, 154, 194, 0.8);
+}
+.container button:hover {
+  cursor: pointer;
+  transform: rotate(-15deg);
+}
+
+@keyframes rollInFromRight {
+  0% {
+    transform: translateX(50%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-5%);
+  }
+}
+
+@keyframes rollOutToRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(40%);
+  }
+  100% {
+    transform: translateX(40%);
+  }
+}

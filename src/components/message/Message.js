@@ -5,7 +5,7 @@ import styles from "./Message.module.css";
 
 const messagesCollectionRef = collection(db, "Messages");
 
-const Message = () => {
+const Message = (props) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -28,6 +28,10 @@ const Message = () => {
       console.error(error);
       console.log("Message Send Failed");
     }
+  };
+
+  const handleClose = () => {
+    props.onClose(false);
   };
 
   return (
@@ -77,7 +81,12 @@ const Message = () => {
           />
         </div>
         <div className={styles.row}>
-          <input className={styles.button} type="submit" value="Submit" />
+          <button className={styles.button} type="submit">
+            Submit
+          </button>
+          <button className={styles.button} onClick={handleClose}>
+            Close
+          </button>
         </div>
       </form>
     </div>

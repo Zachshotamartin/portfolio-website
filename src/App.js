@@ -5,11 +5,10 @@ import Banner from "./components/banner/Banner";
 import Main from "./components/main/Main";
 import Portfolio from "./components/portfolio/Portfolio";
 import Athletics from "./components/athletics/Athletics";
-import Contact from "./components/contact/Contact";
-import Resume from "./components/resume/Resume";
 import Line from "./components/line/Line";
 import ColorDivGrid from "./components/color/ColorDivGrid";
 import Message from "./components/message/Message";
+import Popup from "./components/popup/Popup";
 function App() {
   return (
     <div className="App">
@@ -24,7 +23,7 @@ function App() {
         <Athletics />
         <Line text="Portfolio" from="right" />
         <Portfolio />
-        <Message />
+        <Popup />
         <ColorDivGrid />
       </main>
     </div>
