@@ -17,7 +17,7 @@ const Navigation = () => {
           </a>
           <div className={`${styles.listItem} ${styles.greenContainer}`}></div>
         </li>
-        <li>
+        {/* <li>
           <a href="/resume" className={`${styles.link} ${styles.orange}`}>
             Resume
           </a>
@@ -28,7 +28,7 @@ const Navigation = () => {
             Contact
           </a>
           <div className={`${styles.listItem} ${styles.redContainer}`}></div>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

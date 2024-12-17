@@ -51,7 +51,7 @@
   transition: transform 0.3s ease-in-out;
 }
 .torotate:hover {
-  transform: rotate(-15deg); /* Apply rotation on hover */
+  transform: scale(1.1); /* Apply rotation on hover */
 }
 
 .containerbuttontransitioning {

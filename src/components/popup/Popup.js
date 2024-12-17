@@ -33,21 +33,22 @@ const Popup = () => {
     }, 500);
   };
 
-  //   useEffect(() => {
-  //     const handleClickOutside = (event) => {
-  //       if (navRef.current && !navRef.current.contains(event.target)) {
-  //         handleNavClose();
-  //       }
-  //     };
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        handleNavClose();
+        handleClose();
+      }
+    };
 
-  //     if (navIsOpen) {
-  //       document.addEventListener("click", handleClickOutside);
-  //     }
+    if (navIsOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
 
-  //     return () => {
-  //       document.removeEventListener("click", handleClickOutside);
-  //     };
-  //   }, [navIsOpen]);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [navIsOpen]);
 
   return (
     <div className={styles.component}>
