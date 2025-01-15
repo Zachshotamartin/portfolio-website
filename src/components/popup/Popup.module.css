@@ -1,17 +1,19 @@
 .component {
   position: fixed;
-  top: 90%;
-  left: 95%;
+  top: 88%;
+  left: 94%;
 }
 
 .componentbutton {
   border: none;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   padding: 0px;
   cursor: pointer;
   box-shadow: 0 0 white;
+  background-color: rgba(0, 0, 0, 0);
   transition: ease-in-out 0.3s;
+  border: 2px solid rgba(110, 154, 194, 1);
 }
 
 .componentbutton:hover {
@@ -26,8 +28,8 @@
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  top: 89%;
-  left: -5%;
+  top: 81%;
+  left: 0%;
 }
 
 .containerbutton {
@@ -74,13 +76,13 @@
   }
 
   100% {
-    transform: translateX(-5%);
+    transform: translateX(0%);
   }
 }
 
 @keyframes rollOutToRight {
   0% {
-    transform: translateX(-5%);
+    transform: translateX(0%);
   }
 
   100% {

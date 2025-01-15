@@ -1,19 +1,21 @@
 import React from "react";
 import styles from "./Navigation.module.css";
+import { Link } from "react-router-dom";
+import Scroll from "react-scroll";
 
 const Navigation = () => {
   return (
     <nav className={styles.container}>
       <ul className={styles.list}>
         <li>
-          <a href="/portfolio" className={`${styles.link} ${styles.blue}`}>
-            Portfolio
+          <a href="#athletics" className={`${styles.link} ${styles.blue}`}>
+            Athletics
           </a>
           <div className={`${styles.listItem} ${styles.blueContainer}`}></div>
         </li>
         <li>
-          <a href="/athletics" className={`${styles.link} ${styles.green}`}>
-            Athletics
+          <a href="#portfolio" className={`${styles.link} ${styles.green}`}>
+            Portfolio
           </a>
           <div className={`${styles.listItem} ${styles.greenContainer}`}></div>
         </li>

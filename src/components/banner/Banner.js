@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./Banner.module.css";
 import linkedinLogo from "../../res/images/linkedinIcon3.png";
 import siteLogo from "../../res/images/sitelogo.png";
+import githubLogo from "../../res/images/github.png";
 const Banner = () => {
   return (
     <div className={styles.container}>
@@ -13,6 +14,7 @@ const Banner = () => {
         target="_blank"
         rel="noreferrer"
       >
+        <img src={githubLogo} alt="GitHub" className={styles.imageRight} />
         <img src={linkedinLogo} alt="LinkedIn" className={styles.imageRight} />
       </a>
     </div>

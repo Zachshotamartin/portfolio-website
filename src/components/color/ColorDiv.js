@@ -60,7 +60,7 @@ function ColorDiv({ rows, columns }) {
           keyObj
             ? {
                 backgroundColor: keyObj.color,
-                height: "30px",
+                height: "60px",
                 width: "100%",
                 transition: "ease-in-out 0.2s",
               }

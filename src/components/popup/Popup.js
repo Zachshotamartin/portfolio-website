@@ -3,13 +3,26 @@ import React, { useState, useEffect, useRef } from "react";
 import styles from "./Popup.module.css";
 import Message from "../message/Message";
 import PDF from "../../res/ZacharyMartin-Resume.pdf";
-import arrow from "../../res/images/arrow.png";
+import arrow from "../../res/images/arrow1.png";
+import profileImg1 from "../../res/images/IMG_0998.png";
+import profileImg2 from "../../res/images/IMG_0999.png";
+import profileImg3 from "../../res/images/IMG_1001.png";
+import profileImg4 from "../../res/images/IMG_1002.png";
 
 const Popup = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [navIsOpen, setNavIsOpen] = useState(false);
   const [transitioning, setTransitioning] = useState(false);
   const navRef = useRef(null);
+  const profileImages = [profileImg1, profileImg2, profileImg3, profileImg4];
+  const [profileIndex, setProfileIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setProfileIndex(profileIndex + 1 > 3 ? 0 : profileIndex + 1);
+    }, 300);
+    return () => clearInterval(interval);
+  });
 
   const handleOpen = () => {
     setIsOpen(true);
@@ -54,17 +67,15 @@ const Popup = () => {
   return (
     <div className={styles.component}>
       {
-        /*************  ✨ Codeium Command 🌟  *************/
         <button
           className={styles.componentbutton}
           style={{
-            backgroundImage: `url(${arrow})`,
+            backgroundImage: `url(${profileImages[profileIndex]})`,
             backgroundSize: "contain",
             backgroundRepeat: "no-repeat",
           }}
           onClick={!navIsOpen ? handleNavOpen : handleNavClose}
         ></button>
-        /******  b5f45d96-fcae-4012-98b0-c878b0fe9360  *******/
       }
       {navIsOpen && (
         <div ref={navRef} className={styles.container}>

@@ -19,14 +19,14 @@
   flex: 1.2;
   background-color: #6e9ac2;
   height: 30px;
-  border-radius: 1000px 0 0 1000px;
+  border-radius: 1000px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
 }
 .left {
   flex: 1.2;
   background-color: #6e9ac2;
   height: 30px;
-  border-radius: 0 1000px 1000px 0;
+  border-radius: 1000px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
 }
 .empty {
