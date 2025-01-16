@@ -16,10 +16,18 @@ import fetchProjectData from "./projectInfo";
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setProjects } from "./reducers/projectsReducer";
+import SceneInit from "./lib/sceneInit";
+
 function App() {
   const [loading, setLoading] = React.useState(true);
   const dispatch = useDispatch();
   const projects = useSelector((state) => state.projects.projects);
+
+  useEffect(() => {
+    const test = new SceneInit("myThreeJsCanvas");
+    test.animate();
+  }, []);
+
   useEffect(() => {
     const loadProjects = async () => {
       try {
@@ -50,20 +58,22 @@ function App() {
 
   if (loading) {
     return (
-      <div
-        style={{
-          color: "#6e9ac2",
-          height: "100vh",
-          width: "100%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          fontSize: "3rem",
-          textAlign: "center",
-        }}
-      >
-        Loading...
-      </div>
+      <>
+        <canvas id="myThreeJsCanvas" />
+        <h1
+          style={{
+            color: "white",
+            fontSize: "3rem",
+            position: "absolute",
+            top: "40%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            zIndex: "2",
+          }}
+        >
+          Loading...
+        </h1>
+      </>
     );
   }
   return (
