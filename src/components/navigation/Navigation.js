@@ -9,14 +9,17 @@ const Navigation = () => {
   return (
     <nav className={styles.container}>
       <ul className={styles.list}>
-        {location === "/" && (
+        {/* {location === "/" && (
           <li onClick={() => (window.location.href = `/moreaboutme`)}>
             <a className={`${styles.link} ${styles.blue}`}>More About Me</a>
             <div className={`${styles.listItem} ${styles.blueContainer}`}></div>
           </li>
-        )}
+        )} */}
         {location !== "/" && (
-          <li onClick={() => (window.location.href = `/`)}>
+          <li
+            className={styles.linkItem}
+            onClick={() => (window.location.href = `/`)}
+          >
             <a className={`${styles.link} ${styles.blue}`}>Back</a>
             <div className={`${styles.listItem} ${styles.blueContainer}`}></div>
           </li>

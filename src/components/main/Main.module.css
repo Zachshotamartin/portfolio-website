@@ -24,6 +24,8 @@
 .title {
   font-size: 3rem;
   color: #6e9ac2;
+  margin: 0;
+  padding: 0;
 }
 .description {
   color: black;

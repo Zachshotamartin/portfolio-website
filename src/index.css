@@ -5,6 +5,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   margin-left: 15rem;
   margin-right: 15rem;
+  overflow-x: hidden;
 }
 
 code {
