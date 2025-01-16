@@ -1,24 +1,33 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import styles from "./Navigation.module.css";
-import { Link } from "react-router-dom";
-import Scroll from "react-scroll";
+import { useLocation } from "react-router-dom";
 
 const Navigation = () => {
+  const location = useLocation().pathname;
+  console.log(location);
   return (
     <nav className={styles.container}>
       <ul className={styles.list}>
-        <li>
-          <a href="#athletics" className={`${styles.link} ${styles.blue}`}>
-            Athletics
-          </a>
-          <div className={`${styles.listItem} ${styles.blueContainer}`}></div>
-        </li>
-        <li>
+        {location === "/" && (
+          <li onClick={() => (window.location.href = `/moreaboutme`)}>
+            <a className={`${styles.link} ${styles.blue}`}>More About Me</a>
+            <div className={`${styles.listItem} ${styles.blueContainer}`}></div>
+          </li>
+        )}
+        {location !== "/" && (
+          <li onClick={() => (window.location.href = `/`)}>
+            <a className={`${styles.link} ${styles.blue}`}>Home</a>
+            <div className={`${styles.listItem} ${styles.blueContainer}`}></div>
+          </li>
+        )}
+
+        {/* <li>
           <a href="#portfolio" className={`${styles.link} ${styles.green}`}>
             Portfolio
           </a>
           <div className={`${styles.listItem} ${styles.greenContainer}`}></div>
-        </li>
+        </li> */}
         {/* <li>
           <a href="/resume" className={`${styles.link} ${styles.orange}`}>
             Resume

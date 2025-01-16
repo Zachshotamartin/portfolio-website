@@ -9,7 +9,6 @@
   transition: ease-in-out 0.3s;
 }
 .buttonContainer button:hover {
-  cursor: pointer;
   transform: rotate(-15deg);
 }
 .container {

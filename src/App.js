@@ -8,7 +8,9 @@ import Athletics from "./components/athletics/Athletics";
 import Line from "./components/line/Line";
 // import ColorDivGrid from "./components/color/ColorDivGrid";
 import Popup from "./components/popup/Popup";
+import AthleticTakeAways from "./components/athletictakeaways/AthleticTakeAways";
 import ProjectFullPage from "./components/portfolio/project/ProjectFullPage";
+import MoreAboutMe from "./components/moreAboutMe/moreAboutMe";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { projects } from "./components/projectInfo";
 function App() {
@@ -25,13 +27,13 @@ function App() {
               path="/"
               element={
                 <>
-                  <Line text="About Me" from="right" />
+                  {/* <Line text="About Me" from="right" /> */}
                   <Main />
                   <Line text="Portfolio" from="left" />
                   <Portfolio id="portfolio" />
                   <Line text="Athletics" from="right" />
                   <Athletics id="athletics" />
-
+                  <AthleticTakeAways />
                   <Popup />
                 </>
               }
@@ -73,6 +75,14 @@ function App() {
               element={
                 <>
                   <ProjectFullPage projectInfo={projects.project5} />
+                </>
+              }
+            />
+            <Route
+              path="/moreaboutme"
+              element={
+                <>
+                  <MoreAboutMe />
                 </>
               }
             />

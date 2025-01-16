@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.blackbar {
+  background-color: #6e9ac2;
+  height: 2px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  color: #6e9ac2;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.subtitle {
+  color: #6e9ac2;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  vertical-align: center;
+}
+
+.readmore {
+  color: #6e9ac2;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  vertical-align: center;
+
+  text-align: right;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.entry {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.arrowClicked {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s ease-in-out;
+  transform: rotate(180deg);
+}

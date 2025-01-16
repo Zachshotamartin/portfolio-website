@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./Main.module.css";
 import Headshot from "../headshot/Headshot";
 
-
 // import ColorDivGrid from "../color/ColorDivGrid";
 const Main = () => {
   return (
@@ -10,13 +9,9 @@ const Main = () => {
       <Headshot />
 
       <div className={styles.textContainer}>
-        <p className={styles.text}>
-          About Me Hi, I'm Zach! I was born in Fremont, CA and grew up in
-          Sacramento. I attended Stanford University for the past 4 years,
-          fostering the discovery and love that I have for computer science that
-          I wasn't afforded in high school. I studied as a software engineer
-          with a focus in Computer Graphics. I love working with cool consumer
-          apps and softwares that put people in awe.
+        <h1 className={styles.title}>Hi, I'm Zach.</h1>
+        <p className={styles.description}>
+          Software Engineer | Former Gymnast | Graphics Enthusiast
         </p>
       </div>
     </div>
