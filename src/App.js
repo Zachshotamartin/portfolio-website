@@ -12,8 +12,60 @@ import AthleticTakeAways from "./components/athletictakeaways/AthleticTakeAways"
 import ProjectFullPage from "./components/portfolio/project/ProjectFullPage";
 import MoreAboutMe from "./components/moreAboutMe/moreAboutMe";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { projects } from "./components/projectInfo";
+import fetchProjectData from "./projectInfo";
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { setProjects } from "./reducers/projectsReducer";
 function App() {
+  const [loading, setLoading] = React.useState(true);
+  const dispatch = useDispatch();
+  const projects = useSelector((state) => state.projects.projects);
+  useEffect(() => {
+    const loadProjects = async () => {
+      try {
+        const fetchedProjects = await fetchProjectData(); // Fetch the project data
+        dispatch(setProjects(fetchedProjects));
+      } catch (error) {
+        console.error("Error loading projects:", error.message);
+      } finally {
+        setLoading(false); // Ensure loading is set to false after try or catch
+      }
+    };
+
+    loadProjects();
+  }, []); // Empty dependency array ensures this runs only once on mount
+
+  useEffect(() => {
+    const loadProjects = async () => {
+      try {
+        const projects = await fetchProjectData();
+        setProjects(projects);
+      } catch (error) {
+        console.error("Error loading projects:", error.message);
+      }
+    };
+
+    loadProjects();
+  }, []);
+
+  if (loading) {
+    return (
+      <div
+        style={{
+          color: "#6e9ac2",
+          height: "100vh",
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          fontSize: "3rem",
+          textAlign: "center",
+        }}
+      >
+        Loading...
+      </div>
+    );
+  }
   return (
     <BrowserRouter>
       <div className="App">

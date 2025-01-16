@@ -17,7 +17,7 @@ const Navigation = () => {
         )}
         {location !== "/" && (
           <li onClick={() => (window.location.href = `/`)}>
-            <a className={`${styles.link} ${styles.blue}`}>Home</a>
+            <a className={`${styles.link} ${styles.blue}`}>Back</a>
             <div className={`${styles.listItem} ${styles.blueContainer}`}></div>
           </li>
         )}

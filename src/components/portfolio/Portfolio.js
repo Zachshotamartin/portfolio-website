@@ -1,19 +1,21 @@
 import React from "react";
 import styles from "./Portfolio.module.css";
 import Project from "./project/Project";
-import { projects } from "../projectInfo";
+
+import { useSelector, useDispatch } from "react-redux";
 const Portfolio = () => {
+  const projects = useSelector((state) => state.projects.projects);
   return (
     <div className={styles.container}>
       <div className={styles.projectsRow}>
         <Project
-          imageUrl={projects.project4.imageUrl}
+          imageUrls={projects.project4.imageUrls[0]}
           title={projects.project4.title}
           description={projects.project4.description}
           borderColor="#6e9ac2"
         />
         <Project
-          imageUrl={projects.project2.imageUrl}
+          imageUrls={projects.project2.imageUrls[0]}
           title={projects.project2.title}
           description={projects.project2.description}
           borderColor="#e47366"
@@ -21,32 +23,32 @@ const Portfolio = () => {
       </div>
       <div className={styles.projectsRow}>
         <Project
-          imageUrl={projects.project3.imageUrl}
+          imageUrls={projects.project3.imageUrls[0]}
           title={projects.project3.title}
           description={projects.project3.description}
           borderColor="#e8b056"
         />
         <Project
-          imageUrl={projects.project1.imageUrl}
+          imageUrls={projects.project1.imageUrls[0]}
           title={projects.project1.title}
           description={projects.project1.description}
           borderColor="#8fa589"
         />
       </div>
-      <div className={styles.projectsRow}>
+      {/* <div className={styles.projectsRow}>
         <Project
-          imageUrl={projects.project5.imageUrl}
+          imageUrls={projects.project5.imageUrls[0]}
           title={projects.project1.title}
           description={projects.project1.description}
           borderColor="#6e9ac2"
         />
         <Project
-          imageUrl={projects.project5.imageUrl}
+          imageUrls={projects.project5.imageUrls[0]}
           title={projects.project1.title}
           description={projects.project1.description}
           borderColor="#e47366"
         />
-      </div>
+      </div> */}
     </div>
   );
 };

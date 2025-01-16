@@ -30,7 +30,7 @@
   text-decoration: none;
 }
 .link:hover ~ .listItem {
-  transform: rotate(-3deg);
+  transform: rotate(-4deg);
 }
 
 .list {
@@ -38,7 +38,6 @@
   list-style: none;
   gap: 5rem;
   flex-direction: row;
-  margin-left: 5rem;
 }
 
 .blueContainer {

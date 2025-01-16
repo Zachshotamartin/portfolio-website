@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+
   padding: 5rem;
   padding-top: 0;
 }
@@ -15,10 +15,22 @@
   margin: 0;
 }
 .image {
-  width: 60%;
+  height: 40vh;
   border-radius: 10px;
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.4);
   border: 3px solid #6e9ac2;
+}
+.imageBlank {
+  height: 40vh;
+}
+
+.video {
+  height: 40vh;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.4);
+  border: 3px solid #6e9ac2;
+  margin: 0;
+  padding: 0;
 }
 
 .description {
@@ -26,10 +38,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  padding: 5rem;
+  padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  margin: 0;
   background-color: #6e9ac2;
   color: white;
 }
@@ -38,18 +50,67 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  width: 100vw;
+  height: 45vh;
+  padding: 0;
+  overflow-x: scroll;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  margin: 0;
+}
+.imageContainer::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+}
+.builtUsing {
+  background-color: transparent;
+  border: 2px solid #6e9ac2;
+  color: #6e9ac2;
+
+  padding: 1rem;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+.technologies {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
   gap: 2rem;
+  margin: 0;
+  width: 100%;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
   padding: 0;
 }
 
-.imageArrow {
-  width: 5rem;
-  height: 5rem;
+.link {
+  text-decoration: none !important;
+  color: #6e9ac2;
+  border: 2px solid #6e9ac2;
+  font-weight: bold;
   transition: ease-in-out 0.3s;
+  vertical-align: bottom;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  background-color: white;
+  border-radius: 1000px;
 }
-
-.imageArrow:hover {
+.link:hover {
+  background-color: #6e9ac2;
+  color: white;
   cursor: pointer;
-  transform: scale(1.1);
+  border: 2px solid white;
 }

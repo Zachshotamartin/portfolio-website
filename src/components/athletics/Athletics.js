@@ -1,8 +1,40 @@
 import React from "react";
 import styles from "./Athletics.module.css";
-import gymvideo from "../../res/videos/gymvideo.mp4";
-
+import { useState, useEffect } from "react";
+import { fetchAthleticsVideo } from "../../projectInfo";
 const Athletics = () => {
+  const [athleticsVideo, setAthleticsVideo] = useState(null);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const athleticsVideo = async () => {
+      try {
+        const video = await fetchAthleticsVideo();
+        setAthleticsVideo(video);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error loading projects:", error.message);
+      }
+    };
+    athleticsVideo();
+  }, []);
+
+  if (loading) {
+    return (
+      <div
+        style={{
+          color: "#6e9ac2",
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          fontSize: "3rem",
+          textAlign: "center",
+        }}
+      >
+        Loading...
+      </div>
+    );
+  }
   return (
     <div className={styles.container}>
       <div className={styles.buttonContainer}>
@@ -11,8 +43,8 @@ const Athletics = () => {
         <button className={styles.orange}>Pommels</button>
         <button className={styles.red}>Rings</button>
       </div>
-      <video className={styles.video} controls autoPlay loop>
-        <source src={gymvideo} type="video/mp4" />
+      <video className={styles.video} controls={true} autoPlay={true} loop>
+        <source src={athleticsVideo} type="video/mp4" />
       </video>
 
       <ul>

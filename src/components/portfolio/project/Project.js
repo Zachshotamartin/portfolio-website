@@ -1,13 +1,12 @@
 import React from "react";
 import styles from "./Project.module.css";
-import arrow from "../../../res/images/arrow1.png";
-import arrowRight from "../../../res/images/arrow1Right.png";
 
-const Project = ({ imageUrl, title, description, borderColor }) => {
+const Project = ({ imageUrls, title, description, borderColor }) => {
+  console.log(imageUrls);
   return (
     <img
       className={styles.image}
-      src={imageUrl}
+      src={imageUrls}
       alt={title}
       style={{ border: `.75rem solid ${borderColor}` }}
       onClick={() => {
