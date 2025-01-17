@@ -3,8 +3,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 2vw;
+  margin-top: 2vw;
 }
 
 .blackbar {
@@ -17,28 +17,19 @@
 
 .title {
   color: #6e9ac2;
-  font-size: 2rem;
+  font-size: 2.5vw;
   margin: 0;
   padding: 0;
 }
 
 .subtitle {
   color: #6e9ac2;
-  font-size: 1.5rem;
+  font-size: 2vw;
   margin: 0;
   padding: 0;
   vertical-align: center;
 }
 
-.readmore {
-  color: #6e9ac2;
-  font-size: 1rem;
-  margin: 0;
-  padding: 0;
-  vertical-align: center;
-
-  text-align: right;
-}
 .row {
   display: flex;
   flex-direction: row;
@@ -54,25 +45,29 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 1rem;
+  gap: 1vw;
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
 .arrow {
-  width: 20px;
-  height: 20px;
+  width: 1.5vw;
+  height: 1.5vw;
   margin: 0;
   padding: 0;
   transition: 0.3s ease-in-out;
 }
 
 .arrowClicked {
-  width: 20px;
-  height: 20px;
+  width: 1.5vw;
+  height: 1.5vw;
   margin: 0;
   padding: 0;
   transition: 0.3s ease-in-out;
   transform: rotate(180deg);
+}
+
+.paragraph {
+  font-size: 1.5vw;
 }

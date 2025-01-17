@@ -2,13 +2,15 @@
   color: #6e9ac2;
   flex: 1;
   text-align: right;
-  margin-right: 2rem;
+  margin-right: 2vw;
+  font-size: 3vw;
 }
 .textRight {
   color: #6e9ac2;
   flex: 1;
   text-align: left;
-  margin-left: 2rem;
+  margin-left: 2vw;
+  font-size: 3vw;
 }
 .container {
   display: flex;
@@ -18,14 +20,14 @@
 .right {
   flex: 2;
   background-color: #6e9ac2;
-  height: 30px;
+  height: 2vw;
   border-radius: 1000px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
 }
 .left {
   flex: 2;
   background-color: #6e9ac2;
-  height: 30px;
+  height: 2vw;
   border-radius: 1000px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
 }

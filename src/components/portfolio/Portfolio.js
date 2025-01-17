@@ -53,7 +53,6 @@ const Portfolio = () => {
       </div> */}
         </div>
       )}
-      ;
     </>
   );
 };

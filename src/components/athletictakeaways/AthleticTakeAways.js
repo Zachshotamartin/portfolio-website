@@ -24,7 +24,7 @@ const AthleticTakeAways = () => {
           />
         </div>
         {habitOpen && (
-          <p>
+          <p className={styles.paragraph}>
             Life was fast-paced as a student-athlete. Balancing practices,
             classes, and competitions taught me the value of discipline and time
             management. I made it a habit to plan my day the night before,
@@ -51,7 +51,7 @@ const AthleticTakeAways = () => {
           />
         </div>
         {leadershipOpen && (
-          <p>
+          <p className={styles.paragraph}>
             I’ve learned a lot about leadership since my first day on the team.
             I worked my way up to become the team vault leader, responsible for
             the success of the vaulting team. One of the most important lessons
@@ -76,7 +76,7 @@ const AthleticTakeAways = () => {
           />
         </div>
         {pressureOpen && (
-          <p>
+          <p className={styles.paragraph}>
             The feeling I get from staring down the vault runway, knowing I only
             have one chance, is unlike any other. It’s a mix of excitement and
             pressure, but over time I’ve learned to handle it. Instead of
@@ -105,7 +105,7 @@ const AthleticTakeAways = () => {
           />
         </div>
         {sharedVisionOpen && (
-          <p>
+          <p className={styles.paragraph}>
             I’ve learned that success isn’t just about individual performance —
             it’s about working together toward a common goal. A shared vision
             within a team can create an environment where everyone is motivated
@@ -131,7 +131,7 @@ const AthleticTakeAways = () => {
           />
         </div>
         {communicationOpen && (
-          <p>
+          <p className={styles.paragraph}>
             Effective communication has been a cornerstone of my experience as a
             student-athlete. I’ve learned that It’s not just about speaking up;
             it’s about making sure everyone feels heard and understood. Good

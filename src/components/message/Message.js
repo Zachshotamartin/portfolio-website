@@ -24,6 +24,7 @@ const Message = (props) => {
       setName("");
       setEmail("");
       setMessage("");
+      alert("Message Sent");
     } catch (error) {
       console.error(error);
       console.log("Message Send Failed");

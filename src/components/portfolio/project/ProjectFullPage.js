@@ -3,16 +3,11 @@ import blank from "../../../res/images/blank.png";
 const ProjectFullPage = ({ projectInfo }) => {
   const imagesLength = projectInfo.imageUrls.length;
   const assets = [...projectInfo.imageUrls, ...projectInfo.videoUrls];
-  
+
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>{projectInfo?.title}</h1>
       <div className={styles.imageContainer}>
-        <img
-          className={styles.imageBlank}
-          src={blank}
-          alt={projectInfo.title}
-        />
         {assets.map((asset, index) => {
           if (index < imagesLength) {
             return (
@@ -35,11 +30,6 @@ const ProjectFullPage = ({ projectInfo }) => {
             );
           }
         })}
-        {/* <img
-          className={styles.imageBlank}
-          src={blank}
-          alt={projectInfo.title}
-        /> */}
       </div>
 
       <div className={styles.captionContainer}>

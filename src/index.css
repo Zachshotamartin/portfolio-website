@@ -3,8 +3,8 @@ body {
   font-family: "Lexend", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin-left: 15rem;
-  margin-right: 15rem;
+  margin-left: 10vw;
+  margin-right: 10vw;
   overflow-x: hidden;
 }
 
